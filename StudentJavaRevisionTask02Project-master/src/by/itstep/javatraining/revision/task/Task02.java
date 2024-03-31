@@ -27,6 +27,9 @@ package by.itstep.javatraining.revision.task;
 
 public class Task02 {
     public static int start(int a, int b) {
-        return 0;
+        int res = a > b ? 1 : 2;
+        res = a == b ? 0 : res;
+
+        return res;
     }
 }
