@@ -39,6 +39,20 @@ package by.itstep.javatraining.revision.task;
 
 public class Task07 {
     public static int start(int number) {
-        return 0;
+        if (number < -9999 || number > 9999) {
+            return 0;
+        }
+
+        number = number > 0 ? number : -number;
+        int count = 0;
+
+
+        while (number > 0) {
+            count += number % 10;
+            number = number / 10;
+        }
+
+
+        return count;
     }
 }
