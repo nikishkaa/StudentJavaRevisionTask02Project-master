@@ -25,6 +25,17 @@ package by.itstep.javatraining.revision.task;
 
 public class Task06 {
     public static boolean start(int a, int b, int c) {
-        return false;
+        if (a <= 0 || b <= 0 || c <= 0) {
+            return false;
+        }
+
+        boolean rect = true;
+
+        if (a >= b + c || b >= a + c || c >= b + a) {
+            rect = false;
+        }
+
+
+        return rect;
     }
 }
