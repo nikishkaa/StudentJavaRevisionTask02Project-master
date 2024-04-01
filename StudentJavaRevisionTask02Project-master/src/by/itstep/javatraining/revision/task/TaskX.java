@@ -44,6 +44,10 @@ package by.itstep.javatraining.revision.task;
 
 public class TaskX {
     public static int start(int a, int b) {
+        if (a <= 0 || b <= 0) {
+            return -1;
+        }
+
         return 0;
     }
 }
